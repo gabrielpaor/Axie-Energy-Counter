@@ -1,0 +1,123 @@
+body {
+    background-image: url('axie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    height: 100%;
+    width: 100%;
+}
+
+.text-grp {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 0.5px solid rgb(133, 210, 236);
+    position: relative;
+    left: 15vw;
+    top: 5vw;
+    z-index: 2;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+}
+
+button{
+    padding: 10px auto;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px gray solid;
+    height: 40px;
+    text-align: center;
+    box-shadow: 0px 5px #999;
+    margin: auto;
+}
+
+#roundup-btn{
+    background-color: blue;
+}
+
+#roundup-btn:hover {
+    background-color: darkblue;
+}
+
+#roundup-btn:active {
+    background-color: darkblue;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#rounddown-btn{
+    background-color: red;
+}
+
+#rounddown-btn:hover {
+    background-color: darkred;
+}
+
+#rounddown-btn:active {
+    background-color: darkred;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#increment-btn{
+    background-color: blue;
+}
+
+#increment-btn:hover {
+    background-color: darkblue;
+}
+
+#increment-btn:active {
+    background-color: darkblue;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#decrement-btn{
+    background-color: red;
+}
+
+#decrement-btn:hover {
+    background-color: darkred;
+}
+
+#decrement-btn:active {
+    background-color: darkred;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#pass-btn{
+    background-color: darkgoldenrod;
+}
+
+#pass-btn:hover {
+    background-color: b35900;
+}
+
+#pass-btn:active {
+    background-color: b35900;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#reset-btn{
+    margin-top: 50px;
+    background-color: red;
+}
+
+#reset-btn:hover {
+    background-color: darkred;
+}
+
+#reset-btn:active {
+    background-color: darkred;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}

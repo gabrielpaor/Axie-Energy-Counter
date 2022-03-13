@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Axie Energy Counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text-grp">
+        <h1>Axie Energy Counter</h1>
+        <br>
+        <div class="round-grp">
+            <h3>Round:</h3>
+            <h3 id="roundCount">1</h3>
+            <button id="roundup-btn" onclick="roundUp()">Round+</button>
+            <button id="rounddown-btn" onclick="roundDown()">Round-</button>
+        </div>
+        <br>
+        <div class="energy-grp">
+            <h3>Enemy Energy:</h3>
+            <h3 id="energyCount">3</h3>
+            <button id="increment-btn" onclick="energyUp()">Energy+</button>
+            <button id="decrement-btn" onclick="energyDown()">Energy-</button>
+            <button id="pass-btn" onclick="pass()">Pass</button>
+        </div>
+        <button id="reset-btn" onclick="reset()">Reset</button>
+    </div>
+
+    <script src="index.js">
+    </script>
+</body>
+</html>
