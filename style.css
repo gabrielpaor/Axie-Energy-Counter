@@ -4,8 +4,8 @@ body {
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .text-grp {
