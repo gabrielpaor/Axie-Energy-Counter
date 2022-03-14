@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <head>
     <title>Axie Energy Counter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="text-grp">
-        <h1>Axie Energy Counter</h1>
-        <br>
-        <div class="round-grp">
-            <h3>Round:</h3>
-            <h3 id="roundCount">1</h3>
-            <button id="roundup-btn" onclick="roundUp()">Round+</button>
-            <button id="rounddown-btn" onclick="roundDown()">Round-</button>
+    <div class="container">
+        <div class="text-grp">
+            <h1>Axie Energy Counter</h1>
+            <br>
+            <div class="round-grp">
+                <h3>Round:</h3>
+                <h3 id="roundCount">1</h3>
+                <button id="roundup-btn" onclick="roundUp()">Round+</button>
+                <button id="rounddown-btn" onclick="roundDown()">Round-</button>
+            </div>
+            <br>
+            <div class="energy-grp">
+                <h3>Enemy Energy:</h3>
+                <h3 id="energyCount">3</h3>
+                <button id="increment-btn" onclick="energyUp()">Energy+</button>
+                <button id="decrement-btn" onclick="energyDown()">Energy-</button>
+                <button id="pass-btn" onclick="pass()">Pass</button>
+            </div>
+            <button id="reset-btn" onclick="reset()">Reset</button>
         </div>
-        <br>
-        <div class="energy-grp">
-            <h3>Enemy Energy:</h3>
-            <h3 id="energyCount">3</h3>
-            <button id="increment-btn" onclick="energyUp()">Energy+</button>
-            <button id="decrement-btn" onclick="energyDown()">Energy-</button>
-            <button id="pass-btn" onclick="pass()">Pass</button>
+
+        <div class="instruction-grp">
+            <h1>Game Instruction</h1>
+            <br>
+            <ul>
+                <li>Round starts with 3 energy both sides. The maximum energy that players must have is 10.</li><br>
+                <li>Click "Energy+" if the enemy gains an energy</li><br>
+                <li>Click "Energy-" if the enemy used an energy.</li><br>
+                <li>"Round+" increment a round. When you click it, it adds 2 additional enemy energy. This is because every start of a round, both side will gain 2 energy.</li><br>
+                <li>If you mistakenly clicked "Round+", just click "Round-" and it will decrement the round and subtract 2 enemy energy.</li><br>
+                <li>Click "Pass" if the enemy did not attack this round. It will increment a round and add 2 enemy energy.</li><br>
+                <li>If the match is over, just click "Reset" and the round will reset to 1 and energy to 3.</li><br>
+            </ul>
         </div>
-        <button id="reset-btn" onclick="reset()">Reset</button>
     </div>
 
     <script src="index.js">

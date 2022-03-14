@@ -4,16 +4,29 @@ let energy = 3;
 function roundUp() {
     round++;
     document.getElementById("roundCount").innerHTML = round;
+    if (energy < 10){
+        energy += 2;
+        if (energy > 10) {
+            energy--;
+        }
+        document.getElementById("energyCount").innerHTML = energy;
+    }
 }
 
 function roundDown() {
     round--;
     document.getElementById("roundCount").innerHTML = round;
+    if (energy >= 0){
+        energy -= 2;
+        document.getElementById("energyCount").innerHTML = energy;
+    }
 }
 
 function energyUp() {
-    energy++;
-    document.getElementById("energyCount").innerHTML = energy;
+    if (energy < 10){
+        energy++;
+        document.getElementById("energyCount").innerHTML = energy;
+    }
 }
 
 function energyDown() {
@@ -23,9 +36,14 @@ function energyDown() {
 
 function pass() {
     round++;
-    energy += 2;
     document.getElementById("roundCount").innerHTML = round;
-    document.getElementById("energyCount").innerHTML = energy;
+    if (energy < 10){
+        energy += 2;
+        if (energy > 10) {
+            energy--;
+        }
+        document.getElementById("energyCount").innerHTML = energy;
+    }
 }
 
 function reset() {
