@@ -30,8 +30,10 @@ function energyUp() {
 }
 
 function energyDown() {
-    energy--;
-    document.getElementById("energyCount").innerHTML = energy;
+    if (energy > 0){
+        energy--;
+        document.getElementById("energyCount").innerHTML = energy;
+    }
 }
 
 function pass() {
