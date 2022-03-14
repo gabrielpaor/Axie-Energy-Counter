@@ -125,11 +125,11 @@ button{
 }
 
 #pass-btn:hover {
-    background-color: b35900;
+    background-color: #b35900;
 }
 
 #pass-btn:active {
-    background-color: b35900;
+    background-color: #b35900;
     box-shadow: 0 3px #666;
     transform: translateY(4px);
 }
